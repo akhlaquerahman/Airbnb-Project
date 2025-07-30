@@ -95,8 +95,8 @@
                 <img src="<%=listing.image.url%>" class="card-img-top" alt="listing_Img" style="height: 20rem;">
                  <div class="card-img-overlay"></div>  <!--for hover and text inside the img -->
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <b><p class="card-text"><%= listing.title %> <br></b>
+                  <h5 class="card-title"><%= listing.title %></h5>
+                  <p class="card-text"><%= listing.description %> <br>
                     &#8377; <%= listing.price.toLocaleString("en-IN")%> /night   
                     <i class="tax-info"> &nbsp; &nbsp;+18% GST</i>
                 </p>

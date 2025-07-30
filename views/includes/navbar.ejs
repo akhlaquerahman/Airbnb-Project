@@ -18,6 +18,12 @@
     padding: 0.5rem 3rem 0.5rem 3rem;
     font-size: 0.8rem;
   }
+  .user{
+    position: relative;
+    bottom: .5rem;
+    left: 5rem;
+    color: red;
+  }
 </style>
 
 <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
@@ -47,6 +53,7 @@
           <a class="nav-link"  href="/signup"><b>Sign up</b></a>
           <a class="nav-link" href="/login"><b>Log In</b></a>
           <% } if(currentUser) { %>
+            <p class="user"><b>@<%= currentUser.username %></b></p>
           <a class="nav-link" href="/logout"><b>Log Out</b></a>
           <% } %>
         </div>

@@ -70,10 +70,11 @@ store.on("error", function(e) {
     }
  };
 
-// First Root path
-// app.get("/", (req, res) =>{
-//     res.send("Hi I am Route");
-// });
+// Root path redirect to /listings
+app.get("/", (req, res) => {
+    res.redirect("/listings");
+});
+
 
 app.use(session(sessionOptions)); // use session
 app.use(flash()); // use flash message
